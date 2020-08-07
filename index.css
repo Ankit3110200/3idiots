@@ -1,0 +1,210 @@
+#bo
+{
+    background-image:linear-gradient(90deg,#020024 0%,#090979 35%,#00d4ff 100%);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   /* animation: myanimation 10s infinite;*/
+}
+@keyframes myanimation{
+    0%{background-image:linear-gradient(90deg,#020024 0%,#090979 35%,#00d4ff 100%);}
+    25%{background-image:linear-gradient(90deg,#16bffd 0%,#cb3066 35%,#020024 100%);}
+    50%{background-image:linear-gradient(90deg,#020024 0%,#1d4350 35%,#a43931 100%);}
+    75%{background-image:linear-gradient(90deg,#f7ff00 0%,#db36a4 35%,#020024 100%);}
+    100%{background-image:linear-gradient(90deg,#020024 0%,#ba5370 35%,#f4e2d8 100%);}
+}
+#b1{
+    background-image:linear-gradient(90deg,#020024 0%,#090979 35%,#00d4ff 100%);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: sans-serif;
+}
+/*card 1 effect*/
+#card1
+{
+    width: 50%;
+    height: 50%;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    margin: 50% auto;
+}
+#card1:hover>a{
+    display: block;
+}
+#card1:hover>img{
+    transform: scale(1.2);
+}
+#card1 img{
+    width: 50%;
+    height: 50%;
+    transition: 0.4s;
+}
+#card1 a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    background: rgba(76, 175, 80,0.5);
+    display: none;
+    z-index: 1;
+}
+#card1 a:after{
+    content: 'ANKIT CHOTALIYA';
+    font-size: 10px;
+    font-weight: 300;
+    color: #313131;
+    background: #f1f1f1;
+    border-radius: 8px;
+    padding: 8px 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+/*card 2 effect*/
+#card2
+{
+    width: 50%;
+    height: 50%;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    margin: 50% auto;
+}
+#card2:hover>a{
+    display: block;
+}
+#card2:hover>img{
+    transform: scale(1.2);
+}
+#card2 img{
+    width: 50%;
+    height: 50%;
+    transition: 0.4s;
+}
+#card2 a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    background: rgba(76, 175, 80,0.5);
+    display: none;
+    z-index: 1;
+}
+#card2 a:after{
+    content: 'DHAINIK SUTHAR';
+    font-size: 10px;
+    font-weight: 300;
+    color: #313131;
+    background: #f1f1f1;
+    border-radius: 8px;
+    padding: 8px 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+/*card 3 effet*/
+#card3
+{
+    width: 50%;
+    height: 50%;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    margin: 50% auto;
+}
+#card3:hover>a{
+    display: block;
+}
+#card3:hover>img{
+    transform: scale(1.2);
+}
+#card3 img{
+    width: 50%;
+    height: 50%;
+    transition: 0.4s;
+}
+#card3 a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    background: rgba(76, 175, 80,0.5);
+    display: none;
+    z-index: 1;
+}
+#card3 a:after{
+    content: 'ANKUR ZALAVADIYA';
+    font-size: 10px;
+    font-weight: 300;
+    color: #313131;
+    background: #f1f1f1;
+    border-radius: 8px;
+    padding: 8px 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#link{
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px;
+}
+ul{
+    box-sizing: border-box;
+    box-shadow: red;
+    list-style-type: none;
+    margin: 0;
+    padding: 16px;
+    overflow: hidden;
+}
+li{
+    float: left;
+    color: red;
+    font-size: 20px;
+}
+li a {
+    display: block;
+    color:red;
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+    transition: 4s linear;
+    position: relative;
+}
+li a::before,li a::after{
+    content: '';
+    position: absolute;
+    box-sizing: border-box;
+    color:white;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transition: 4s linear;
+}
+li a:hover{
+    transform: scale(.3);
+}
+li a:hover::before
+{
+    border-left: 4px solid;
+    border-right: 4px solid;
+    transform: skewX(40deg);
+}
+li a:hover::after
+{
+    border-top: 4px solid;
+    border-bottom: 4px solid;
+    transform: skewy(-40deg);
+}
